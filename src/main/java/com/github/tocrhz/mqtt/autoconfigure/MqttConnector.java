@@ -165,7 +165,7 @@ public class MqttConnector implements DisposableBean {
 
                 @Override
                 public void connectionLost(Throwable cause) {
-                    log.warn("Mqtt connection lost.");
+                    log.warn("Mqtt connection lost...", cause);
                 }
 
                 @Override
